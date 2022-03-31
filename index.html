@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<!-- Logo Header -->
+<div class="top-container">
+  <img src="./images/logo.png">
+</div>
+
+<!-- Frames -->
+<div class="full-container">
+
+  <!-- Left Frame Container -->
+  <div class="left-container">
+    <img src="./images/VIT-frame-right.png">
+  </div> 
+
+  <!-- Central Frame Container -->
+      <div class="container">
+
+          <!-- Left Buttons Container -->
+        <div class="left-buttons">
+          <button class="btn-prev" onclick="prevTop()"><</button>
+          <button class="btn-prev" onclick="prevBottom()"><</button>
+        </div>
+
+        <!-- Central Frame -->
+        <div class="frame">
+
+          <!-- Randomizer Button -->
+          <button class="btn-random" onclick="randomizeTop()">Surprise Me!</button>
+          <img src="./images/VIT-Frame.png">
+
+            <!-- Image Slider 1 -->
+              <div class="slider-one">
+                <div class="image-box">
+                  <img src="./images/top-01.jpg" class="slider-image-top" id="heads">
+                </div>
+              </div>
+
+            <!-- Image Slider 2 -->
+            <div class="slider-two">
+                <div class="image-box">
+                  <img src="./images/bottom-01.jpg" class="slider-image-bottom" id="bodies">
+              </div>
+            </div>
+
+            <!-- Randomizer Button -->
+            <button class="btn-random" onclick="randomizeBottom()">Surprise Me!</button>
+          </div>
+
+            <!-- Right Buttons -->
+            <div class="right-buttons">
+              <button class="btn-next" onclick="nextTop()">></button>
+            <button class="btn-next" onclick="nextBottom()">></button>
+          </div>
+      </div>
+
+      <!-- Right Frame Container -->
+    <div class="right-container">
+      <img src="./images/VIT-Frame.png">
+    </div> 
+
+</div>
+
+
+<script src="./script.js"></script>  
+</body>
+</html>
